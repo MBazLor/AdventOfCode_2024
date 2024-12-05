@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public class AOC_2 {
 
-    private static String filePath ="inputFile.txt";
+    private static String filePath ="src/aoc_2/input.txt";
     /**
      * @param args the command line arguments
      */
@@ -26,7 +26,7 @@ public class AOC_2 {
         ArrayList<String> safeLevels = new ArrayList<>();
         ArrayList<String> unsafeLevels = new ArrayList<>();
         
-        FileReader fr = new FileReader("inputFile.txt");
+        FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
         
         populateAllAsUnsafe(br, unsafeLevels); //Inserta todos los valores en el array de unsafe
@@ -98,7 +98,7 @@ public class AOC_2 {
         }
         else
         {
-            System.err.println("ALERTA!: No se ha podido determinar la dirección, se establece en asc");
+            //System.err.println("ALERTA!: No se ha podido determinar la dirección, se establece en asc");
             sum = 1;
         }
         

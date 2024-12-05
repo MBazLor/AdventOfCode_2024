@@ -18,7 +18,7 @@ public class AOC_3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        FileReader fr = new FileReader("input.txt");
+        FileReader fr = new FileReader("src/aoc_3/input.txt");
         BufferedReader br = new BufferedReader(fr);
         String line; //Utilizado sólo para extraer los datos del buffer
         StringBuilder data = new StringBuilder();
@@ -29,7 +29,7 @@ public class AOC_3 {
         }
         
         System.out.printf("%.0f",parseAll(data)); 
-        System.out.printf("\n%.0f",parseConditional(data));   
+        System.out.printf("\n%.0f\n",parseConditional(data));   
     }
 
     

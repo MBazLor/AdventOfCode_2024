@@ -1,5 +1,5 @@
 
-package aoc_d1_1;
+package aoc_1;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,11 +13,10 @@ import java.util.Collections;
  *
  * @author Manuel Bazarra
  */
-public class AOC_D1_1 {
+public class AOC_1 {
 
     
-    private static final String FILE_PATH = "input.txt"; //Ruta al archivo
-
+    private static final String FILE_PATH = "src/aoc_1/input.txt"; //Ruta al archivo
     /**
      * Primer puzzle de Adventofcode.com
      * 
@@ -109,7 +108,6 @@ public class AOC_D1_1 {
                     counter++;
                 }    
             }
-            
             score += num * counter; 
         }
         
